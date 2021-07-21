@@ -5,6 +5,7 @@ In this repository, I considered a parsing algorithm using [recursive descent](h
 ### Based on [this idea](http://synset.com/logic/ru/intro/01_parser.html):
 
 Grammar for arithmetic expressions:
+
 ![demo image](resources/grammar.png)
 
 
