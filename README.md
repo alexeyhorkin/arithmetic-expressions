@@ -37,9 +37,9 @@ pytest ./tests/
 
 The tests in the section `tests / test_calculation` are needed to check the correctness of the calculation of arithmetic expressions. A few simple test cases:
 ```python
-CASES = [("1", 1),
-         ("1 + 2", 3),
-         ("1 - 2", -1)]
+CASES = [CaseCalc("1", 1),
+         CaseCalc("1 + 2", 3),
+         CaseCalc("1 - 2", -1)]
 ```
 
 ### Style test
