@@ -48,7 +48,7 @@ To check code style i use [flake8](https://gitlab.com/pycqa/flake8) and [mypy](h
 
 * for `PEP8` code style:
 ```bash
-pytest ./
+flake ./
 ```
 
 * for typing:
