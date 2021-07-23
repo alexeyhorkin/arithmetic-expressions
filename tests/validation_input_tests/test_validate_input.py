@@ -22,7 +22,6 @@ def test_raises(case: CaseInputValidation) -> None:
         _ = parse_operation(iterator)
     except TypeError as err:
         if case.expected_error_message is None:
-            assert False, f"Exception {err} raised but input is valid"
+            assert False, f"Exception '{err}' raised but input is valid"
         else:
             assert str(err) == case.expected_error_message
-    # assert True
