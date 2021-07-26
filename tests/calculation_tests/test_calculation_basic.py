@@ -1,3 +1,4 @@
+from calculator.operations import Operation
 import pytest
 from calculator.parser import parse_operation
 from calculator.tokenizer import Tokenizer
@@ -29,4 +30,5 @@ CASES = [CaseCalc("1", 1),
 def test_easy_caces_calc(case: CaseCalc) -> None:
     iterator = Tokenizer(case.given).__iter__()
     op = parse_operation(iterator)
+    assert isinstance(op, Operation)
     assert op.execute() == pytest.approx(case.expected, EPS)

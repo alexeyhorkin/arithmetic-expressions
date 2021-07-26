@@ -5,14 +5,15 @@ from ..tests_utities import CaseTokenizer
 
 
 CASES = [CaseTokenizer("1", [tks.ConstantToken]),
+         CaseTokenizer("* 3", [tks.MulToken, tks.ConstantToken]),
          CaseTokenizer("1 + 2", [tks.ConstantToken,
                                  tks.SumToken,
                                  tks.ConstantToken]),
-         CaseTokenizer("(2*3)", [tks.OpenBracketToken,
-                                 tks.ConstantToken,
-                                 tks.MulToken,
-                                 tks.ConstantToken,
-                                 tks.CloseBracketToken])]
+         CaseTokenizer("(2 * 3)", [tks.OpenBracketToken,
+                                   tks.ConstantToken,
+                                   tks.MulToken,
+                                   tks.ConstantToken,
+                                   tks.CloseBracketToken])]
 
 
 @pytest.mark.parametrize("case", CASES)

@@ -6,7 +6,8 @@ EPS = 1e-3
 ERR_NO_CLOSE_BRACKET = "No close bracket found"
 ERR_NO_OPEN_BRACKET = "No open bracket found"
 ERR_INVALID_CHARACTER = "Invalid character"
-ERR_NO_SUMMAND = "No addendum found"
+ERR_NO_SUMMAND_PLUS = "No addendum found"
+ERR_NO_SUMMAND_MINUS = "No subtracted found"
 ERR_NO_DIVIDER = "No divider found"
 ERR_NO_MULTIPLIER = "No multiplier found"
 
