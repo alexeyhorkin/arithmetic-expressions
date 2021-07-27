@@ -1,6 +1,8 @@
 # Calculator for arithmetic expressions
 
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![CI](https://github.com/alexeyhorkin/arithmetic-expressions/actions/workflows/python-package.yml/badge.svg)
+
 
 
 In this repository, I considered a parsing algorithm using [recursive descent](https://en.wikipedia.org/wiki/Recursive_descent_parser) for a context-free [LL(1) grammar](https://en.wikipedia.org/wiki/LL_grammar#Simple_deterministic_languages) of the language of arithmetic expressions. I use [Top-Down parser](https://www.tutorialspoint.com/compiler_design/compiler_design_top_down_parser.htm) to create an expression tree.
@@ -16,7 +18,7 @@ Grammar for arithmetic expressions:
 
 ### Prerequisites
 
-I use `Python3`, so first of all we need to install some python packages so that we can run tests and check types as well.
+I use `Python3.7.0` or higher, so first of all we need to install some python packages so that we can run tests and check types as well.
 
 ```bash
 pip install -r requirements.txt
