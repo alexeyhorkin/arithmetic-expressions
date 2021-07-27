@@ -1,5 +1,8 @@
 # Calculator for arithmetic expressions
 
+![CI](https://github.com/alexeyhorkin/arithmetic-expressions/actions/workflows/python-package.yml/badge.svg)
+
+
 In this repository, I considered a parsing algorithm using [recursive descent](https://en.wikipedia.org/wiki/Recursive_descent_parser) for a context-free [LL(1) grammar](https://en.wikipedia.org/wiki/LL_grammar#Simple_deterministic_languages) of the language of arithmetic expressions. I use [Top-Down parser](https://www.tutorialspoint.com/compiler_design/compiler_design_top_down_parser.htm) to create an expression tree.
 
 ### Based on [this idea](http://synset.com/logic/ru/intro/01_parser.html):
@@ -48,7 +51,7 @@ To check code style i use [flake8](https://gitlab.com/pycqa/flake8) and [mypy](h
 
 * for `PEP8` code style:
 ```bash
-flake ./
+flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 ```
 
 * for typing:
